@@ -1,5 +1,7 @@
 package oop.classs;
 
+import oop.inheritance.ElectricCar;
+
 public class Main {
     public static void main(String[] args){
 
@@ -12,12 +14,17 @@ public class Main {
 //        System.out.println("for coup");
 //        coup.DisplayInfo();
 
-        // after using constructer
-        Car sedan = new Car("mercedes","black","160");
+        // after using constructor
+        Car sedan = new Car("mercedes","black",160);
         System.out.println("Displaing info for :" + sedan);
         sedan.DisplayInfo();
+        Car mc = new Car("maruti","white",100);
+        ElectricCar mcc = new ElectricCar("maruti","White",100,67);
+
+        System.out.println("total cars: " + Car.getTotalCars());
     }
 
-    Car car1 = new Car("bmw","green","320");
+
+
 
 }

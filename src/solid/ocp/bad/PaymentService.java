@@ -2,6 +2,10 @@ package solid.ocp.bad;
 
 public class PaymentService {
 
+    // Decides which option to call and performa that calling
+    // Deciding of payment is not dependent on actual business logic
+    // The logic is to process the payment no matter which option is given
+
     public void processPayment(String type, double amount) {
         if (type.equals("UPI")) {
             System.out.println("Processing UPI payment of " + amount);

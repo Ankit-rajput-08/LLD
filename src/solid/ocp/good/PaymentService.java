@@ -1,5 +1,8 @@
 package solid.ocp.good;
 
+import solid.ocp.good.factory.PaymentStrategyFactory;
+import solid.ocp.good.interfac.PaymentStrategy;
+
 class PaymentService {
     private PaymentStrategy strategy;
 

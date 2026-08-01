@@ -4,6 +4,10 @@ import oop.abstraction.Shape;
 import oop.interfaces.Chargeable;
 import oop.interfaces.Ev;
 import oop.interfaces.HybridCar;
+import solid.lsp.penguin.Bird;
+import solid.lsp.penguin.MakeBirdFly;
+import solid.lsp.penguin.Penguin;
+import solid.lsp.penguin.Sparrow;
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -37,6 +41,9 @@ public class Main {
         System.out.println(hybrid);
         hybrid.DisplayInfo();
         hybrid.charge();
+
+        MakeBirdFly bird = new MakeBirdFly();
+        bird.makeBirdFly(new Sparrow());
 
 
 

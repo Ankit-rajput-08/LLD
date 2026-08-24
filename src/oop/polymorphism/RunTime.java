@@ -136,7 +136,7 @@ public class RunTime {
         Car hybridCar = new ElectricCar("Tesla", "White", 200, 90);
 
         if (hybridCar instanceof ElectricCar electricCar) {
-            electricCar.charge(); // ✅ works after cast
+            electricCar.charge();
         }
     }
 }

@@ -2,10 +2,14 @@ package oop.abstraction;
 
 public class Circle extends Shape {
 
+private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
 
     @Override
     double area() {
-        double r = 5;
-        return  3.14 * r * r;
+        return Math.PI * radius * radius;
     }
 }

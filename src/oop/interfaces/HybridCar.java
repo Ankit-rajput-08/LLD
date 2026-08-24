@@ -6,7 +6,7 @@ public class HybridCar extends Car implements  Chargeable {
     private int fuelLevel;
     public HybridCar(String brand, String color, int speed, int fuelLevel) {
         super(brand, color, speed);
-        if (fuelLevel < 0) System.out.println("enter valid level ");
+        if (fuelLevel < 0) throw new IllegalArgumentException("Fuel level cannot be negative");
         this.fuelLevel = fuelLevel;
     }
     @Override
